@@ -1,0 +1,21 @@
+.home {
+    position: relative;
+  }
+  
+  .reservation-filter-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(50%);
+    z-index: 10;
+  }
+  
+  @media (max-width: 768px) {
+    .reservation-filter-container {
+      position: static;
+      transform: none;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+  }

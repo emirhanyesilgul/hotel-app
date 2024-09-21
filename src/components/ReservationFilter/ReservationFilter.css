@@ -1,0 +1,133 @@
+.reservation-filter {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .filter-item {
+    flex: 1 1 calc(14% - 10px);
+    min-width: 120px;
+  }
+  
+  .date-input,
+  .select-wrapper select,
+  .promo-code input,
+  .search-button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .select-wrapper,
+  .promo-code {
+    position: relative;
+  }
+  
+  .select-wrapper svg,
+  .promo-code svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+  }
+  
+  .select-wrapper select,
+  .promo-code input {
+    padding-left: 30px;
+  }
+  
+  .search-button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 100%;
+  }
+  
+  .search-button:hover {
+    background-color: #ffea00;
+  }
+  
+  /* Large desktop */
+  @media (max-width: 1200px) {
+    .filter-item {
+      flex: 1 1 calc(25% - 10px);
+    }
+  }
+  
+  /* Small desktop and tablet landscape */
+  @media (max-width: 992px) {
+    .filter-item {
+      flex: 1 1 calc(33.333% - 10px);
+    }
+  }
+  
+  /* Tablet portrait */
+  @media (max-width: 768px) {
+
+    .reservation-filter {
+        padding: 15px;
+        display: contents;
+      }
+      .filter-item {
+        flex: 1 1 calc(50% - 10px);
+      }
+      
+      .date-input-wrapper {
+        flex: 1 1 100%;
+      }
+      
+      .date-input {
+        width: 100%;
+      }
+     
+      .date-input,
+      .select-wrapper,
+      .promo-code,
+      .search-button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+  }
+  
+  /* Mobile */
+  @media (max-width: 576px) {
+    .reservation-filter {
+      flex-direction: column;
+    }
+    
+    .filter-item {
+      flex: 1 1 100%;
+    }
+  }
+  
+  /* Extra small devices */
+  @media (max-width: 320px) {
+    .reservation-filter {
+      padding: 10px;
+    }
+    
+    .date-input,
+    .select-wrapper select,
+    .promo-code input,
+    .search-button {
+      font-size: 12px;
+    }
+  }
