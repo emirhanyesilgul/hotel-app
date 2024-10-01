@@ -1,8 +1,15 @@
-import React, { useState } from 'react';
-import DatePicker from 'react-datepicker';
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { FaMoon, FaUser, FaChild, FaGift, FaSearch, FaCalendarAlt } from 'react-icons/fa';
-import './ReservationFilter.css';
+import {
+  FaMoon,
+  FaUser,
+  FaChild,
+  FaGift,
+  FaSearch,
+  FaCalendarAlt,
+} from "react-icons/fa";
+import "./ReservationFilter.css";
 
 const ReservationFilter = () => {
   const [checkIn, setCheckIn] = useState(new Date());
@@ -10,10 +17,17 @@ const ReservationFilter = () => {
   const [nights, setNights] = useState(2);
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
-  const [promoCode, setPromoCode] = useState('');
+  const [promoCode, setPromoCode] = useState("");
 
   const handleSearch = () => {
-    console.log('Searching with:', { checkIn, checkOut, nights, adults, children, promoCode });
+    console.log("Searching with:", {
+      checkIn,
+      checkOut,
+      nights,
+      adults,
+      children,
+      promoCode,
+    });
   };
 
   return (
@@ -45,25 +59,40 @@ const ReservationFilter = () => {
       </div>
       <div className="filter-item select-wrapper">
         <FaMoon />
-        <select value={nights} onChange={(e) => setNights(Number(e.target.value))}>
+        <select
+          value={nights}
+          onChange={(e) => setNights(Number(e.target.value))}
+        >
           {[...Array(30)].map((_, i) => (
-            <option key={i} value={i + 1}>{i + 1} Gece</option>
+            <option key={i} value={i + 1}>
+              {i + 1} Gece
+            </option>
           ))}
         </select>
       </div>
       <div className="filter-item select-wrapper">
         <FaUser />
-        <select value={adults} onChange={(e) => setAdults(Number(e.target.value))}>
+        <select
+          value={adults}
+          onChange={(e) => setAdults(Number(e.target.value))}
+        >
           {[...Array(10)].map((_, i) => (
-            <option key={i} value={i + 1}>{i + 1} Yetişkin</option>
+            <option key={i} value={i + 1}>
+              {i + 1} Yetişkin
+            </option>
           ))}
         </select>
       </div>
       <div className="filter-item select-wrapper">
         <FaChild />
-        <select value={children} onChange={(e) => setChildren(Number(e.target.value))}>
+        <select
+          value={children}
+          onChange={(e) => setChildren(Number(e.target.value))}
+        >
           {[...Array(11)].map((_, i) => (
-            <option key={i} value={i}>{i} Çocuk</option>
+            <option key={i} value={i}>
+              {i} Çocuk
+            </option>
           ))}
         </select>
       </div>

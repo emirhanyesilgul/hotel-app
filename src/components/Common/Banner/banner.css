@@ -168,8 +168,7 @@
 
 .reservation-filter input,
 .reservation-filter select {
-  padding: 10px 15px;
-  border: none;
+  padding: 10px 30px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -197,7 +196,7 @@
   .reservation-filter { flex-direction: column; }
   .reservation-filter input,
   .reservation-filter select,
-  .check-availability { width: 100%; }
+  .check-availability { width: 100%!important; }
   
   /* Mobil cihazlarda slider butonlarını gizle */
   .nav-button {
