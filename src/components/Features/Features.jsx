@@ -1,10 +1,5 @@
 import React from "react";
 import "../Features/features.css";
-
-import feature1 from "../../assets/images/feature/beach-umbrella.png";
-import feature2 from "../../assets/images/feature/deal.png";
-import feature3 from "../../assets/images/feature/location.png";
-import feature4 from "../../assets/images/feature/medal.png";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -89,33 +84,31 @@ const Features = () => {
   ];
 
   return (
-    <>
-      <section className="feature-section">
-        <Container>
-          <Row>
-            <Col md="12">
-              <Slider {...settings}>
-                {featureList.map((feature) => (
-                  <div key={feature.id}>
-                    <Card className="feature-card">
-                      <Card.Img
-                        variant="top"
-                        src={feature.image}
-                        alt={feature.title}
-                      />
-                      <Card.Body>
-                        <Card.Title>{feature.title}</Card.Title>
-                        <Card.Text>{feature.des}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </div>
-                ))}
-              </Slider>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-    </>
+    <section className="feature-section">
+      <Container>
+        <Row>
+          <Col md="12">
+            <Slider {...settings}>
+              {featureList.map((feature) => (
+                <div key={feature.id}>
+                  <Card className="feature-card">
+                    <Card.Img
+                      variant="top"
+                      src={feature.image}
+                      alt={feature.title}
+                    />
+                    <Card.Body>
+                      <Card.Title>{feature.title}</Card.Title>
+                      <Card.Text>{feature.des}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </Slider>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 };
 

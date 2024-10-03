@@ -76,16 +76,16 @@ const Header = () => {
                 <NavLink className="nav-link" to="/">
                   Anasayfa
                 </NavLink>
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="about-us">
                   Hakkımızda
                 </NavLink>
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="rooms">
                   Odalar
                 </NavLink>
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="hotels">
                   Oteller
                 </NavLink>
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="photo-gallery">
                   Galeri
                 </NavLink>
                 <NavDropdown
@@ -106,10 +106,10 @@ const Header = () => {
                     Diğer Odalar
                   </NavDropdown.Item>
                 </NavDropdown>
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="blog">
                   Blog
                 </NavLink>
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="contact">
                   İletişim
                 </NavLink>
               </Nav>

@@ -1,16 +1,16 @@
 import React from "react";
-import Banner from "../components/Common/Banner/Banner";
-import ReservationFilter from "../components/ReservationFilter/ReservationFilter";
+import Banner from "../../components/Common/Banner/Banner";
+import ReservationFilter from "../../components/ReservationFilter/ReservationFilter";
 import { Container, Row, Col } from "react-bootstrap";
-import Features from "../components/Features/Features";
+import Features from "../../components/Features/Features";
 import "./Home.css";
-import Gallery from "../components/Gallery/Gallery";
+import Gallery from "../../components/Gallery/Gallery";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Cards from "../components/Cards/Cards";
-import { destinationsData, popularsData } from "../utils/data";
-import PopularCard from "../components/Cards/PopularCard";
+import Cards from "../../components/Cards/Cards";
+import { destinationsData, popularsData } from "../../utils/data";
+import PopularCard from "../../components/Cards/PopularCard";
 const Home = () => {
   var settings = {
     dots: false,

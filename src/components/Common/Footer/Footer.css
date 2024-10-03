@@ -1,0 +1,118 @@
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 60px 0 0;
+    font-size: 14px;
+  }
+
+  .footer h5 {
+    color: var(--primarybtn) !important;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer a:hover {
+    color: var(--primarybtn) !important;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+  }
+
+  .partner-logos img {
+    height: 40px;
+    margin-right: 20px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+
+  .partner-logos img:hover {
+    filter: grayscale(0%);
+  }
+
+  .newsletter-form {
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .newsletter-form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .newsletter-form button {
+    background-color: #af9400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .newsletter-form button:hover {
+    background-color: #fff;
+    box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700, 0 0 60px #ffd700;
+    color: #000;
+  }
+
+  .copyright {
+    background-color: #1a252f;
+    color: #bdc3c7;
+    padding: 15px 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content > div {
+      margin-bottom: 30px;
+    }
+
+    .footer-bottom > div {
+      margin-bottom: 20px;
+    }
+
+    .partner-logos, .newsletter {
+      text-align: center;
+    }
+
+    .newsletter-form {
+      flex-direction: column;
+    }
+
+    .newsletter-form input, .newsletter-form button {
+      width: 100%;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+  }
