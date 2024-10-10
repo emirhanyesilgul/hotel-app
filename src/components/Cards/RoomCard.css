@@ -1,0 +1,183 @@
+.room-card {
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.room-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.room-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.room-image-container {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+}
+
+.room-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: unset!important;
+}
+
+.image-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.image-nav:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.image-nav.prev {
+  left: 10px;
+}
+
+.image-nav.next {
+  right: 10px;
+}
+
+.image-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: white;
+}
+
+.room-card .card-body {
+  width: 50%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.room-card .room-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.room-card .room-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.room-card .room-info {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.room-card .amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.room-card .amenity-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room-card .amenity-icon {
+  color: #c69c6d;
+  font-size: 20px;
+}
+
+.room-card .amenity-name {
+  font-size: 10px;
+  color: #666;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.room-card .card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.room-card .more-info-btn {
+  color: #c69c6d;
+  padding: 0;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.room-card .more-info-btn:hover {
+  color: #a57b4e;
+}
+
+.room-card .reservation-btn {
+  background-color: #c69c6d;
+  border-color: #c69c6d;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+}
+
+.room-card .reservation-btn:hover {
+  background-color: #a57b4e;
+  border-color: #a57b4e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .room-content {
+    flex-direction: column;
+  }
+
+  .room-image-container,
+  .room-card .card-body {
+    width: 100%;
+    margin: unset;
+  }
+}

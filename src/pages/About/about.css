@@ -1,0 +1,50 @@
+.about-image-content{
+    
+    width: 350px;
+    line-height: 42px;
+    text-decoration-color: bisque;
+}
+.player{
+    display: flex;
+    justify-content: center;
+}
+.about-image-content {
+    
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.feature-card .card-text {
+    flex-grow: 1;
+}
+
+.feature-card .bi {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.btnshowvideo{
+    background-color: #af9400;
+}
+.btnshowvideo :hover{
+   opacity: 0.8!important;
+   color: #af9400;
+}
+/* Add more custom styles as needed */

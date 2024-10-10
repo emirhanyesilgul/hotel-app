@@ -1,22 +1,4 @@
-// destinations img
-import tour4 from "../assets/images/tour/Tokyo.png";
-import tour5 from "../assets/images/tour/bali-1.png";
-import tour6 from "../assets/images/tour/bangkok.png";
-import tour7 from "../assets/images/tour/cancun.png";
-import tour8 from "../assets/images/tour/nah-trang.png";
-import tour9 from "../assets/images/tour/phuket.png";
-import tour10 from "../assets/images/tour/paris.png";
-import tour11 from "../assets/images/tour/malaysia.png";
 
-// populars img
-import Anchorage from "../assets/images/popular/Anchorage To La Paz.jpg";
-import Singapore from "../assets/images/popular/Discover Singapore.png";
-import Kiwiana from "../assets/images/popular/Kiwiana Panorama.jpg";
-import Quito from "../assets/images/popular/Anchorage To Quito.jpg";
-import Cuzco from "../assets/images/popular/Cuzco To Anchorage.jpg";
-import Ushuaia from "../assets/images/popular/Anchorage To Ushuaia.jpg";
-import Santiago from "../assets/images/popular/Anchorage To Santiago.jpg";
-import Explorer from "../assets/images/popular/LA Explorer.jpg";
 
 // tour detail img
 import image1 from "../assets/images/new/1.jpg";
@@ -50,38 +32,81 @@ export const popularsData = [
   {
     id: 0,
     title: "Superior Twin",
-    image: "https://hotel1207.com/storage/rooms/superiortwin/61920684d408f-770x460.jpeg",
+    images: [
+      "https://hotel1207.com/storage/rooms/superiortwin/61920684d408f-770x460.jpeg",
+      "https://hotel1207.com/storage/rooms/superriordouble/61920682c79a1-770x460.jpeg",
+      "https://hotel1207.com/storage/rooms/superiortwin/61920684d408f-770x460.jpeg"
+    ],
     location: "Antalya Kaleiçi",
+    description: "Ferah ve konforlu Superior Twin odamız, şehir manzarası eşliğinde rahat bir konaklama sunuyor.",
+    amenities: ['wifi', 'tv', 'air-conditioner', 'coffee'],
     category: ["Lüx"],
     days: "5 days - 4 nights",
     price: 100,
     afterDiscount: 92,
     rating: 2,
     reviews: "Oda",
+    size: 25,
+    minPerson: 2,
+    view: "Şehir Manzaralı"
   },
   {
     id: 1,
     title: "Superior Double",
-    image: "https://hotel1207.com/storage/rooms/superriordouble/61920682c79a1-770x460.jpeg",
+    images: [
+      "https://hotel1207.com/storage/rooms/superriordouble/61920682c79a1-770x460.jpeg",
+      "https://hotel1207.com/storage/rooms/superriordouble/61920682c79a1-770x460.jpeg",
+      "https://hotel1207.com/storage/rooms/superriordouble/61920682c79a1-770x460.jpeg"
+    ],
     location: "Antalya Kaleiçi",
+    description: "Romantik bir kaçamak için ideal olan Superior Double odamız, lüks ve konforu bir arada sunuyor.",
+    amenities: [
+      { icon: "wifi", name: "Ücretsiz Wi-Fi" },
+      { icon: "tv", name: "Düz Ekran TV" },
+      { icon: "person", name: "2 Kişilik" },
+      { icon: "air-conditioner", name: "Klima" },
+      { icon: "bathtub", name: "Küvetli Banyo" },
+      { icon: "minibar", name: "Minibar" }
+    ],
     category: ["Lüx"],
     days: "2 days - 1 nights",
     price: 87,
     afterDiscount: 82,
     rating: 1,
     reviews: "Oda",
+    size: 30,
+    minPerson: 2,
+    view: "Deniz Manzaralı"
   },
   {
     id: 2,
     title: "Deluxe Suite",
-    image: "https://hotel1207.com/storage/rooms/kingsuit/61920683d1098-770x460.jpeg",
+    images: [
+      "https://hotel1207.com/storage/rooms/kingsuit/61920683d1098-770x460.jpeg",
+      "https://hotel1207.com/storage/rooms/kingsuit/61920683d1098-770x460.jpeg",
+      "https://hotel1207.com/storage/rooms/kingsuit/61920683d1098-770x460.jpeg"
+    ],
     location: "Antalya Kaleiçi",
+    description: "Geniş ve lüks Deluxe Suite odamız, ayrı oturma alanı ve muhteşem manzarasıyla unutulmaz bir konaklama deneyimi sunuyor.",
+    amenities: [
+      { icon: "wifi", name: "Ücretsiz Wi-Fi" },
+      { icon: "tv", name: "Düz Ekran TV" },
+      { icon: "person", name: "4 Kişilik" },
+      { icon: "air-conditioner", name: "Klima" },
+      { icon: "bathtub", name: "Jakuzili Banyo" },
+      { icon: "minibar", name: "Minibar" },
+      { icon: "room-service", name: "24 Saat Oda Servisi" },
+      { icon: "balcony", name: "Özel Balkon" }
+    ],
     category: ["Lüx"],
     days: "2 days - 1 nights",
     price: 87,
     afterDiscount: 82,
     rating: 1,
     reviews: "Oda",
+    size: 45,
+    minPerson: 2,
+    view: "Panoramik Deniz Manzaralı"
   },
 ];
 

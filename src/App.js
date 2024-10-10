@@ -10,6 +10,8 @@ import PhotoGallery from './pages/PhotoGallery/PhotoGallery';
 import Rooms from './pages/Rooms/Rooms';
 import Hotels from './pages/Hotels/Hotels';
 import Blog from './pages/Blog/Blog';
+import OnlineRes from './pages/OnlineReservation/OnlineRes';
+import RoomsDetail from './pages/Rooms/RoomsDetail';
 
 function App() {
   return (
@@ -24,7 +26,8 @@ function App() {
     <Route path='rooms' element={<Rooms />} />
     <Route path='hotels' element={<Hotels />} />
     <Route path='blog' element={<Blog />} />
-
+    <Route path='OnlineRes' element={<OnlineRes/>}/>
+    <Route path="/rooms/:title" element={<RoomsDetail />} />
    </Routes>
    <Footer />
    </>

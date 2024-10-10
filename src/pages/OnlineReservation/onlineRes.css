@@ -1,0 +1,19 @@
+.reservation-wrapper {
+   
+  }
+  
+  .reservation-iframe {
+    width: 100%;
+    height: calc(100vh - 80px); /* Adjust this value to fill the remaining screen height */
+    border: none;
+  }
+  
+  @media (max-width: 768px) {
+    .reservation-wrapper {
+      
+    }
+    
+    .reservation-iframe {
+      height: calc(100vh - 60px);
+    }
+  }

@@ -3,6 +3,7 @@ import Banner from "../../components/Common/Banner/Banner";
 import ReservationFilter from "../../components/ReservationFilter/ReservationFilter";
 import { Container, Row, Col } from "react-bootstrap";
 import Features from "../../components/Features/Features";
+import Rooms from "../../components/Common/Rooms/Rooms";
 import "./Home.css";
 import Gallery from "../../components/Gallery/Gallery";
 import Slider from "react-slick";
@@ -67,52 +68,14 @@ const Home = () => {
         <ReservationFilter />
       </div>
       <Features />
+      <Rooms />
       {/* tour seciton start */}
 
-      <section className="tours_section slick_slider">
-        <Container>
-          <Row>
-            <Col md="12">
-              <div className="main_heading">
-                <h1>Otellerimiz</h1>
-              </div>
-            </Col>
-          </Row>
-
-          <Row>
-            <Col md="12">
-              <Slider {...settings}>
-                {destinationsData.map((destination, inx) => {
-                  return <Cards destination={destination} key={inx} />;
-                })}
-              </Slider>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+     
 
       {/* tour seciton start */}
 
-      <section className="popular py-5">
-        <Container>
-          <Row>
-            <Col md="12">
-              <div className="main_heading">
-                <h1>Popüler Odalar</h1>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            {popularsData.map((val, inx) => {
-              return (
-                <Col md={3} sm={6} xs={12} className="mb-5" key={inx}>
-                  <PopularCard val={val} />
-                </Col>
-              );
-            })}
-          </Row>
-        </Container>
-      </section>
+  
       <section className="call_us">
         <Container>
           <Row className="align-items-center">

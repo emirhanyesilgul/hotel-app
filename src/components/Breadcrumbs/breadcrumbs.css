@@ -1,0 +1,69 @@
+.breadcrumbs-wrapper {
+    background-image: url("https://hotel1207.com/storage/rooms/room1/whatsapp-image-2023-06-05-at-161716-10.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .breadcrumbs-wrapper h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .breadcrumb-item {
+    font-size: 1rem;
+  }
+  
+  .breadcrumb-item a,
+  .breadcrumb-item.active {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .breadcrumb-item a:hover {
+    color: #f8f9fa;
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .breadcrumbs-wrapper {
+      height: 200px;
+    }
+  
+    .breadcrumbs-wrapper h1 {
+      font-size: 2rem;
+    }
+  }
+  
