@@ -8,8 +8,10 @@ const OnlineRes = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
 
+  // URL'yi oluştururken parametreleri kodlamayı önlemek için
   const iframeSrc = `https://1207boutiquehotel.rezervasyonal.com/?language=tr&${searchParams.toString()}`;
   console.log(iframeSrc);
+
   return (
     <Container fluid className="p-0">
       <Breadcrumbs title="Rezervasyon" pagename="Rezervasyon Yap" />

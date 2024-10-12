@@ -114,19 +114,22 @@ const Banner = () => {
               <h1>{slides[currentSlide].title}</h1>
               <h2>{slides[currentSlide].subtitle}</h2>
               <p>{slides[currentSlide].description}</p>
+              {/* 
               <motion.button 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn-primary"
               >
+             
                 Keşfet
-              </motion.button>
+              </motion.button> */}
             </motion.div>
           </div>
         </motion.div>
       </AnimatePresence>
-      <button className="nav-button prev" onClick={() => changeSlide((currentSlide - 1 + slides.length) % slides.length)}>&lt;</button>
+    {/*   <button className="nav-button prev" onClick={() => changeSlide((currentSlide - 1 + slides.length) % slides.length)}>&lt;</button>
       <button className="nav-button next" onClick={() => changeSlide((currentSlide + 1) % slides.length)}>&gt;</button>
+       */}
       <div className="dots">
         {slides.map((_, index) => (
           <motion.span 

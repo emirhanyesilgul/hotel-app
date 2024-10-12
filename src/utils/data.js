@@ -42,7 +42,7 @@ export const popularsData = [
     amenities: ['wifi', 'tv', 'air-conditioner', 'coffee'],
     category: ["Lüx"],
     days: "5 days - 4 nights",
-    price: 100,
+    price: 101,
     afterDiscount: 92,
     rating: 2,
     reviews: "Oda",

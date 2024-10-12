@@ -1,0 +1,245 @@
+/* RoomDetail.css */
+.room-detail-page {
+    background-color: #f8f9fa;
+  }
+  .room-features{
+    display: unset!important;
+  }
+  .room-detail-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .room-gallery {
+    margin-bottom: 2rem;
+  }
+  
+  .main-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .main-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .slider-button.prev {
+    left: 20px;
+  }
+  
+  .slider-button.next {
+    right: 20px;
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    justify-content: start;
+    margin-top: 1rem;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .thumbnail {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .thumbnail:hover, .thumbnail.active {
+    opacity: 0.7;
+  }
+  
+  .room-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .custom-tabs .nav-link {
+    color: #555;
+    font-weight: 600;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .custom-tabs .nav-link:hover,
+  .custom-tabs .nav-link.active {
+    color: #af9400;
+    background-color: transparent;
+    border-bottom: 2px solid #af9400;
+  }
+  
+  .tab-content {
+    padding-top: 2rem;
+  }
+  
+  .room-description p,
+  .room-features li,
+  .room-amenities li,
+  .room-location li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-list,
+  .amenity-list,
+  .location-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .feature-item,
+  .amenity-list li,
+  .location-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-item svg,
+  .amenity-list li svg,
+  .location-list li svg {
+    margin-right: 1rem;
+    color: #af9400;
+    font-size: 1.2rem;
+  }
+  
+  .booking-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .price-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .per-night {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .reservation-form .form-label {
+    font-weight: 600;
+    color: #555;
+    margin-right: 15px;
+  }
+  
+  .reservation-form .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 0.75rem;
+  }
+  
+  .reservation-form .btn-primary {
+    background-color: #af9400;
+    border-color: #af9400;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reservation-form .btn-primary:hover {
+    box-shadow:unset;
+  }
+  
+  .need-help {
+    margin-top: 2rem;
+    border-top: 1px solid #dee2e6;
+    padding-top: 1.5rem;
+  }
+  
+  .need-help h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .need-help p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: #555;
+  }
+  
+  .need-help svg {
+    margin-right: 0.75rem;
+    color: #af9400;
+  }
+  
+  @media (max-width: 991px) {
+    .booking-card {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .room-title {
+      font-size: 2rem;
+    }
+  
+    .main-image {
+      height: 350px;
+    }
+  
+    .thumbnail {
+      width: 80px;
+      height: 60px;
+    }
+  
+    .price {
+      font-size: 2rem;
+    }
+  }

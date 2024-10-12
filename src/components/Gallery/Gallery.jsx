@@ -1,15 +1,8 @@
 import React from 'react'
 import Lightroom from 'react-lightbox-gallery'
-import GalleryImg1 from "../../assets/images/gallery/g1.jpg"
-import GalleryImg3 from "../../assets/images/gallery/g3.jpg"
-import GalleryImg4 from "../../assets/images/gallery/g4.jpg"
-import GalleryImg6 from "../../assets/images/gallery/g6.jpg"
-import GalleryImg7 from "../../assets/images/gallery/g7.jpg"
-
-
+import '../../components/Gallery/gallery.css'
 const Gallery = () => {
-
-    var images = [
+    const images = [
         {
             src: "https://hotel1207.com/storage/rooms/superiortwin/61920684d408f-770x460.jpeg",
             desc: "Superior Twin",
@@ -42,18 +35,21 @@ const Gallery = () => {
         },
     ];
 
-    var settings = {
+    const settings = {
         columnCount: {
             default: 3,
             mobile: 2,
             tab: 3
         },
         mode: "dark",
-        enableZoom:false,
+        enableZoom: false,
     };
+
     return (
-        <Lightroom images={images} settings={settings} />
-   );
+        <div style={{ zIndex: 1000 }}>
+        <Lightroom className="gallery" images={images} settings={settings} />
+      </div>
+    );
 }
 
 export default Gallery

@@ -88,6 +88,7 @@ const Header = () => {
                 <NavLink className="nav-link" to="photo-gallery">
                   Galeri
                 </NavLink>
+                {/* 
                 <NavDropdown
                   title="Oda Tipleri"
                   id={`offcanvasNavbarDropdown-expand-lg`}
@@ -106,9 +107,10 @@ const Header = () => {
                     Diğer Odalar
                   </NavDropdown.Item>
                 </NavDropdown>
-                <NavLink className="nav-link" to="blog">
+                 <NavLink className="nav-link" to="blog">
                   Blog
                 </NavLink>
+                */}
                 <NavLink className="nav-link" to="contact">
                   İletişim
                 </NavLink>
