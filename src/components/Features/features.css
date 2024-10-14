@@ -1,12 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap');
+.feature-icons {
+  font-size: 3.5rem;
+  color: #b8860b;
+  display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 60px;
+    flex: 0 0 auto;
+  transition: all 0.3s ease;
+}
 
+.feature-icons svg {
+      /* width: 24px; */
+     height: 39px; 
+    /* font-size: 75px; */
+    color: #af9400;
+    margin-bottom: 5px;
+    /* filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));*/
+}
+
+.feature-content:hover .feature-icons {
+  transform: scale(1.1) rotate(5deg);
+}
 .features-section {
-  background-color: #f8f5f0;
-  background-image: url('https://cdn.sandersondesigngroup.com/processed-images/products/large/DSOH225348.jpg');
+/* background-color: #f8f5f0;
+  background-image: url('https://pattern.bkbillustrations.com/assets/img/pt37.png');
+  position: relative;
+  */
   background-repeat: repeat;
   background-size: 200px;
-  padding: 60px 0;
+  padding: 100px 0;
+  
+}
+
+.features-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(184,134,11,0.1), rgba(255,255,255,0.1));
+  z-index: 1;
+}
+
+.features-section .container {
   position: relative;
+  z-index: 2;
 }
 
 .section-title {
@@ -14,7 +58,7 @@
   text-align: center;
   color: #2c3e50;
   font-size: 3.5rem;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   font-weight: 700;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
@@ -25,30 +69,30 @@
 .section-title::after {
   content: "";
   position: absolute;
-  width: 100px;
+  width: 150px;
   height: 3px;
   background: linear-gradient(90deg, transparent, #b8860b, transparent);
-  bottom: -15px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .section-title::after {
-  width: 70px;
-  bottom: -25px;
+  width: 100px;
+  bottom: -30px;
 }
 
 .feature-content {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 40px 30px;
-  border-radius: 0;
+  border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   transition: all 0.4s ease;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid #b8860b;
+  border: 1px solid rgba(184,134,11,0.3);
   position: relative;
   overflow: hidden;
 }
@@ -60,9 +104,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, #b8860b, transparent);
-  opacity: 0.1;
-  z-index: 0;
+  background: linear-gradient(45deg, rgba(184,134,11,0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.feature-content:hover::before {
+  opacity: 1;
 }
 
 .feature-content > * {
@@ -70,25 +118,20 @@
   z-index: 1;
 }
 
-.feature-content:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-}
-
-.feature-icon {
-  font-size: 3rem;
+.feature-icons {
+  font-size: 3.5rem;
   color: #b8860b;
   margin-bottom: 25px;
   transition: all 0.3s ease;
 }
 
-.feature-content:hover .feature-icon {
+.feature-content:hover .feature-icons {
   transform: scale(1.1) rotate(5deg);
 }
 
 .feature-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #2c3e50;
   margin-bottom: 15px;
   font-weight: 600;
@@ -100,16 +143,20 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 50px;
   height: 2px;
   background-color: #b8860b;
+  transition: width 0.3s ease;
+}
+
+.feature-content:hover .feature-title::after {
+  width: 75px;
 }
 
 .feature-description {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #5d6d7e;
   line-height: 1.6;
   font-weight: 300;
@@ -124,15 +171,15 @@
     padding: 30px 20px;
   }
 
-  .feature-icon {
-    font-size: 2.5rem;
+  .feature-icons {
+    font-size: 3rem;
   }
 
   .feature-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .feature-description {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }
